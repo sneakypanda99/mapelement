@@ -1,0 +1,75 @@
+.point {
+    position: absolute
+
+}
+
+  @keyframes makeLabel {
+    0% {
+      border-radius: 50%;
+    }
+    25% {
+        border-radius: 12px;
+    }
+    50% {
+      width: 25px;
+    }
+  
+    100% {
+      width: 200px;
+      color:black;
+
+
+    }
+  }
+  @keyframes makeLabel2 {
+    0% {
+        width: 200px;
+        border-radius: 12px;
+
+    }
+    15% {
+
+    }
+    25% {
+        width: 25px;
+    }
+    50% {
+        border-radius: 12px;
+
+    }
+  
+    100% {
+        border-radius: 50%;
+        color:transparent;
+
+    }
+  }
+  
+.defaultPoint{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    text-align: center;
+    color:transparent;
+
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    
+    animation: makeLabel2 .3s ease-in-out forwards;
+
+}
+.defaultPoint p {
+    margin:0;
+    padding: 3px;
+}
+
+.defaultPoint:hover {
+    border-radius: 12px;
+
+    cursor: pointer;
+    animation: makeLabel .3s ease-in-out forwards;
+}
+
+  
